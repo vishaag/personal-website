@@ -14,29 +14,12 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ allPostsData }) {
+export default function Blog({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout blog>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Blog - {siteTitle}</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem}`}>
-         <h2 className={utilStyles.headingMd}>things I've been working on..</h2>
-         <ul className={`${utilStyles.list} ${utilStyles.imageList}`}>
-           <li>
-             <img src="https://picsum.photos/300/200" />
-           </li>
-           <li>
-             <img src="https://picsum.photos/300/200" />
-           </li>
-           <li>
-             <img src="https://picsum.photos/300/200" />
-           </li>
-         </ul>
-        {/* <Link > */}
-          <a style={{float: 'right'}} className={utilStyles.link}>see more work →</a>
-        {/* </Link> */}
-      </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem}`}>
         <h2 className={utilStyles.headingMd}>things I've been writing about..</h2>
         <ul className={utilStyles.list}>
@@ -52,7 +35,6 @@ export default function Home({ allPostsData }) {
           </li>
           ))}
         </ul>
-        <a style={{float: 'right'}} className={utilStyles.link}>see more posts →</a>
       </section>
     </Layout>
   )

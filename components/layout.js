@@ -3,7 +3,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Vishaag Suriyanarayanan'
+const firstName = 'Vishaag'
+const lastName = 'Suriyanarayanan'
 export const siteTitle = 'Vishaag\'s Space on the Web'
 
 export default function Layout({ children, home }) {
@@ -25,33 +26,33 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+        <div className={styles.headerIntroSide}>
+          <img
+            src="/images/feather1.png"
+            className={styles.headerIntroImage}
+            alt='logo'
+          />
+          <h1 className={utilStyles.headingLg}>{firstName} <span className={utilStyles.lightText}>{lastName}</span></h1>
+          <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>is a Computer Science Engineer with a focus on front-end engineering and currently based in Sunny Singapore</p>
+        </div>
+        <div className={styles.headerNavSide}>
+          <ul className={styles.headerLinksList}>
+            <li className={styles.headerLinksListItem}>
+              <Link href="/work">
+                <a>work</a>
               </Link>
-            </h2>
-          </>
-        )}
+            </li>
+            <li className={styles.headerLinksListItem}>
+              <Link href="/blog">
+                <a>blog</a>
+              </Link></li>
+            <li className={styles.headerLinksListItem}>
+              <Link href="/about">
+                <a>about</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </header>
       <main>{children}</main>
       {!home && (
