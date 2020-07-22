@@ -17,12 +17,20 @@
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
-  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+  margin: 0;
 }
 
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.textSm {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
 }
 
 .borderCircle {
@@ -37,6 +45,10 @@
   padding-top: 1px;
 }
 
+.marginTop3rem {
+  margin-top: 3rem;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -47,6 +59,24 @@
   margin: 0 0 1.25rem;
 }
 
+.link {
+  font-size: 1rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.imageList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .lightText {
   color: #666;
+}
+
+.featherColor {
+  background: -webkit-linear-gradient(0deg,#00c4cc,#7d2ae8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
