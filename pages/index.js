@@ -20,23 +20,16 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem}`}>
-         <h2 className={utilStyles.headingMd}>things I've been working on..</h2>
-         <ul className={`${utilStyles.list} ${utilStyles.imageList}`}>
-           <li>
-             <img src="https://picsum.photos/300/200" />
-           </li>
-           <li>
-             <img src="https://picsum.photos/300/200" />
-           </li>
-           <li>
-             <img src="https://picsum.photos/300/200" />
-           </li>
-         </ul>
-        {/* <Link > */}
-          <a style={{float: 'right'}} className={utilStyles.link}>see more work →</a>
-        {/* </Link> */}
+
+      <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem} ${utilStyles.titleTextContainer}`}>
+        <h1 className={`${utilStyles.titleText}`}>
+          <span>Explore.</span> 
+          <span>Question.</span>
+          <span>Learn.</span>
+          <span>Share.</span>
+        </h1>
       </section>
+      
       <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem}`}>
         <h2 className={utilStyles.headingMd}>things I've been writing about..</h2>
         <ul className={utilStyles.list}>
@@ -52,7 +45,36 @@ export default function Home({ allPostsData }) {
           </li>
           ))}
         </ul>
-        <a style={{float: 'right'}} className={utilStyles.link}>see more posts →</a>
+        <Link href="/blog">
+          <a className={utilStyles.link}>see more posts →</a>
+        </Link>
+      </section>
+
+      <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem}`}>
+         <h2 className={utilStyles.headingMd}>things I've been working on..</h2>
+         <ul className={`${utilStyles.list} ${utilStyles.cardList}`}>
+           <li>
+             <a className={utilStyles.card} href="https://guess-that-logo.now.sh/" target="_blank">
+                <h3>Guess That Logo</h3>
+                <p>You need to guess all the logos in 30 secs. Can you do it? Built with Next.js 9.4</p>
+             </a>
+           </li>
+           <li>
+             <a className={utilStyles.card} href="https://github.com/vishaag/MagicWand" target="_blank">
+                <h3>Magic Wand</h3>
+                <p>Swish & Flick your smartphone to press buttons on your keyboard. Built with React Native & some ML</p>
+             </a>
+           </li>
+           <li>
+             <a className={utilStyles.card} href="https://scoreboardoverlay.now.sh/" target="_blank">
+                <h3>SVG Overlay</h3>
+                <p>What if sport scoreboard overlays could be done with SVG animations? Built with Greensock & React.js </p>
+             </a>
+           </li>
+         </ul>
+        <Link href="/work">
+          <a className={utilStyles.link}>see more work →</a>
+        </Link>
       </section>
     </Layout>
   )

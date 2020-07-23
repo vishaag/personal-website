@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Vishaag's Space on the Web"
         />
         <meta
           property="og:image"
@@ -27,11 +27,13 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         <div className={styles.headerIntroSide}>
-          <img
-            src="/images/feather1.png"
-            className={styles.headerIntroImage}
-            alt='logo'
-          />
+          <Link href="/">
+            <img
+              src="/images/feather1.png"
+              className={styles.headerIntroImage}
+              alt='logo'
+            />
+          </Link> 
           <h1 className={utilStyles.headingLg}>{firstName} <span className={utilStyles.lightText}>{lastName}</span></h1>
           <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>is a Computer Science Engineer with a focus on front-end engineering and currently based in Sunny Singapore</p>
         </div>
@@ -62,6 +64,39 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer>
+        <div className={styles.footerIntroSide}>
+          <img
+            src="/images/feather3.png"
+            className={styles.footerImage}
+            alt='logo'
+          />
+          <h1 className={utilStyles.headingLg}><span className={utilStyles.lightText}>Find my</span> work interesting?</h1>
+          <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>I'm currently on the lookout for a new role. If you like my work and think I'd be a good fit in your team, please get in touch!</p>
+        </div>
+        <div className={styles.footerNavSide}>
+          <img
+            src="/images/mail.png"
+            className={styles.footerNavLogo}
+            alt='logo'
+          />
+          <img
+            src="/images/twitter.png"
+            className={styles.footerNavLogo}
+            alt='logo'
+          />
+          <img
+            src="/images/github.png"
+            className={styles.footerNavLogo}
+            alt='logo'
+          />
+          <img
+            src="/images/linkedin.png"
+            className={styles.footerNavLogo}
+            alt='logo'
+          />
+        </div>
+      </footer>
     </div>
   )
 }

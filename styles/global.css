@@ -34,3 +34,9 @@ img {
 h1 {
   font-family: 'Fugaz One', cursive;
 }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0 3rem 0;
+}

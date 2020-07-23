@@ -12,15 +12,48 @@ export default function Work({ allPostsData }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem}`}>
          <h2 className={utilStyles.headingMd}>things I've been working on..</h2>
-         <ul className={`${utilStyles.list} ${utilStyles.imageList}`}>
+         <ul className={`${utilStyles.list} ${utilStyles.cardList}`}>
            <li>
-             <img src="https://picsum.photos/300/200" />
+             <a className={utilStyles.card} href="https://guess-that-logo.now.sh/" target="_blank">
+                <h3>Guess That Logo</h3>
+                <p>You need to guess all the logos in 30 secs. Can you do it? Built with Next.js 9.4</p>
+             </a>
            </li>
            <li>
-             <img src="https://picsum.photos/300/200" />
+             <a className={utilStyles.card} href="https://youtu.be/8pJV7OvZIZU" target="_blank">
+                <h3>CSS Bytes</h3>
+                <p>A new Youtube Series where I make short, concise, educative videos about CSS</p>
+             </a>
            </li>
            <li>
-             <img src="https://picsum.photos/300/200" />
+             <a className={utilStyles.card} href="https://github.com/vishaag/MagicWand" target="_blank">
+                <h3>Magic Wand</h3>
+                <p>Swish & Flick your smartphone to press buttons on your keyboard. Built with React Native & some ML</p>
+             </a>
+           </li>
+           <li>
+             <a className={utilStyles.card} href="https://scoreboardoverlay.now.sh/" target="_blank">
+                <h3>SVG Overlay</h3>
+                <p>What if sport scoreboard overlays could be done with SVG animations? Built with Greensock & React.js </p>
+             </a>
+           </li>
+           <li>
+             <a className={utilStyles.card} href="https://github.com/vishaag/dialogflow-airtable-example" target="_blank">
+                <h3>Chatbot Example</h3>
+                <p>An example to demonstrate how you can use Airtable as the database for a dialogflow chatbot.</p>
+             </a>
+           </li>
+           <li>
+             <a className={utilStyles.card} href="https://www.youtube.com/watch?v=DLyNaq7eSQc&feature=youtu.be" target="_blank">
+                <h3>Intelliship</h3>
+                <p>E-commerce site demo with Moltin & Next.js.</p>
+             </a>
+           </li>
+           <li>
+             <a className={utilStyles.card} href="https://github.com/vishaag/siaAssist" target="_blank">
+                <h3>Sia Assist</h3>
+                <p>Intelligent Personal Airport Assistant Chatbot for Changi Airport.</p>
+             </a>
            </li>
          </ul>
       </section>
