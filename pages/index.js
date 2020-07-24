@@ -23,10 +23,10 @@ export default function Home({ allPostsData }) {
 
       <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem} ${utilStyles.titleTextContainer}`}>
         <h1 className={`${utilStyles.titleText}`}>
-          <span>Explore.</span> 
-          <span>Question.</span>
-          <span>Learn.</span>
-          <span>Share.</span>
+          <span><span>Explore</span></span>
+          <span><span>Question.</span></span>
+          <span><span>Learn.</span></span>
+          <span><span>Share.</span></span>
         </h1>
       </section>
       

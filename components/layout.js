@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
         <meta
           name="description"
           content="Vishaag's Space on the Web"
@@ -64,7 +64,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-      <footer>
+      <footer className={styles.footer}>
         <div className={styles.footerIntroSide}>
           <img
             src="/images/feather3.png"
@@ -72,7 +72,7 @@ export default function Layout({ children, home }) {
             alt='logo'
           />
           <h1 className={utilStyles.headingLg}><span className={utilStyles.lightText}>Find my</span> work interesting?</h1>
-          <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>I'm currently on the lookout for a new role. If you like my work and think I'd be a good fit in your team, please get in touch!</p>
+          <p className={`${utilStyles.textSm} ${styles.footerText}`}>I'm currently on the lookout for a new role. If you like my work and think I'd be a good fit in your team, please get in touch!</p>
         </div>
         <div className={styles.footerNavSide}>
           <div className={styles.footerLinks}>

@@ -6,12 +6,12 @@
 
 .header {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   margin: 1rem 0 1rem 0;
 }
 
 .headerIntroSide {
-  max-width: 50%;
+  flex: 0 0 50%;
   display: grid;
   grid-template-rows: 35px 65px;
   grid-template-columns: 86px 1fr;
@@ -34,7 +34,7 @@
 }
 
 .headerNavSide {
-  flex: 1 0 50%;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -90,4 +90,109 @@
 .footerNavLogo {
   width: 48px;
   height: 48px;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3rem 0 3rem 0;
+}
+
+@media only screen and (max-width: 975px) {
+  .headerIntroText {
+    display: none;
+  }
+
+  .headerIntroSide {
+    flex: 0 0 40%;
+    display: grid;
+    grid-template-rows: 35px 65px;
+    grid-template-columns: 55px 1fr;
+  }
+
+  .headerIntroImage {
+    cursor: pointer;
+    width: 44px;
+    height: 67px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .headerNavSide {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .footerText {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 542px) {
+  .header {
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .headerIntroText {
+    display: none;
+  }
+
+  .headerIntroSide {
+    flex: 0 0 40%;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 35px 65px;
+    grid-template-columns: 55px 1fr;
+  }
+
+  .headerIntroImage {
+    cursor: pointer;
+    width: 44px;
+    height: 67px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .headerNavSide {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3rem 0 3rem 0;
+    justify-content: center;
+  }
+
+  .footerIntroSide {
+    flex: 0 0 100%;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .footerNavSide {
+    flex: 0 0 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  .footerLinks {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
 }
