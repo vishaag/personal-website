@@ -62,10 +62,24 @@
 .footerNavSide {
   flex: 1 0 40%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  flex-flow: column nowrap;
   align-items: center;
 } 
+
+.footerLinks {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.email {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
 
 .footerImage {
   width: 66px;

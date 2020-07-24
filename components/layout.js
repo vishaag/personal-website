@@ -58,7 +58,7 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className={utilStyles.link}>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
@@ -75,26 +75,39 @@ export default function Layout({ children, home }) {
           <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>I'm currently on the lookout for a new role. If you like my work and think I'd be a good fit in your team, please get in touch!</p>
         </div>
         <div className={styles.footerNavSide}>
-          <img
-            src="/images/mail.png"
-            className={styles.footerNavLogo}
-            alt='logo'
-          />
-          <img
-            src="/images/twitter.png"
-            className={styles.footerNavLogo}
-            alt='logo'
-          />
-          <img
-            src="/images/github.png"
-            className={styles.footerNavLogo}
-            alt='logo'
-          />
-          <img
-            src="/images/linkedin.png"
-            className={styles.footerNavLogo}
-            alt='logo'
-          />
+          <div className={styles.footerLinks}>
+            <a href="mailto:vishaag@gmail.com" target="_blank">
+              <img
+                src="/images/mail.png"
+                className={styles.footerNavLogo}
+                alt='logo'
+              />
+            </a>
+            <a href="https://twitter.com/vishaag" target="_blank">
+              <img
+                src="/images/twitter.png"
+                className={styles.footerNavLogo}
+                alt='logo'
+              />
+            </a>
+
+            <a href="https://github.com/vishaag" target="_blank">
+              <img
+                src="/images/github.png"
+                className={styles.footerNavLogo}
+                alt='logo'
+              />
+            </a>
+
+            <a href="https://www.linkedin.com/in/vishaag/" target="_blank">
+              <img
+                src="/images/linkedin.png"
+                className={styles.footerNavLogo}
+                alt='logo'
+              />
+            </a> 
+          </div>   
+          <span className={styles.email}>vishaag@gmail.com</span>
         </div>
       </footer>
     </div>
