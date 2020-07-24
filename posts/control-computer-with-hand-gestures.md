@@ -5,7 +5,7 @@ date: '2020-01-01'
 
 For one of the projects in my master’s course, we were supposed to build an intelligent system that utilised any type of sensor data. Me and my group decided to do something cool. At first, we weren’t sure if we could pull something like this in a short time, but voila! Here’s what we finally built!
 
-<img src="/assets/magic_wand_demo.gif"/>
+<img src="/images/magic_wand_demo.gif"/>
 
 The demo that you see above recognizes the hand gesture when pressing the button and then classifes different gestures and maps it to keyboard presses.
 
