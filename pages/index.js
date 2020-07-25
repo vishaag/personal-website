@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.marginTop3rem} ${utilStyles.titleTextContainer}`}>
+      <section className={`${utilStyles.headingMd} ${utilStyles.titleTextContainer}`}>
         <h1 className={`${utilStyles.titleText}`}>
           <span><span>Explore</span></span>
           <span><span>Question.</span></span>

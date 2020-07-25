@@ -51,7 +51,7 @@
 }
 
 .textSm {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   line-height: 1.5;
   padding: 0;
   margin: 0;
@@ -152,7 +152,10 @@
   max-width: 50%; 
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 975px) {
+  .titleText {
+    margin: 0
+  }
   .cardList {
     display: flex;
     flex-flow: row wrap;
@@ -166,4 +169,5 @@
     max-width: 100%;
   }
 }
+
 

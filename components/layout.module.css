@@ -11,7 +11,7 @@
 }
 
 .headerIntroSide {
-  flex: 0 0 50%;
+  flex: 0 0 51%;
   display: grid;
   grid-template-rows: 35px 65px;
   grid-template-columns: 86px 1fr;
@@ -82,6 +82,7 @@
 }
 
 .footerImage {
+  margin-bottom: 1rem;
   width: 66px;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -98,24 +99,34 @@
   margin: 3rem 0 3rem 0;
 }
 
+.introTextSm {
+  display: none;
+}
+
 @media only screen and (max-width: 975px) {
   .headerIntroText {
     display: none;
   }
 
+  .introTextSm {
+    font-size: 0.85rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
   .headerIntroSide {
-    flex: 0 0 40%;
-    display: grid;
-    grid-template-rows: 35px 65px;
-    grid-template-columns: 55px 1fr;
+    flex: 1 0 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
   }
 
   .headerIntroImage {
     cursor: pointer;
     width: 44px;
     height: 67px;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    margin-right: 1rem;
   }
 
   .headerNavSide {
@@ -128,13 +139,27 @@
 
 @media only screen and (max-width: 850px) {
   .footerText {
-    display: none;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .footerIntroSide {
+    flex: 1 0 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .footerLinks, .email {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
   }
 }
 
 @media only screen and (max-width: 542px) {
   .header {
-    justify-content: center;
     display: flex;
     flex-flow: row wrap;
     margin: 1rem 0 1rem 0;
@@ -145,23 +170,23 @@
   }
 
   .headerIntroSide {
-    flex: 0 0 40%;
+    flex: 1 0 100%;
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
-    display: grid;
-    grid-template-rows: 35px 65px;
-    grid-template-columns: 55px 1fr;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .headerIntroImage {
     cursor: pointer;
     width: 44px;
     height: 67px;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    margin-right: 1rem;
   }
 
   .headerNavSide {
-    flex: 1 1 auto;
+    flex: 1 0 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,8 +200,8 @@
   }
 
   .footerIntroSide {
-    flex: 0 0 100%;
-    display: none;
+    flex: 1 0 100%;
+    display: flex;
     flex-flow: column nowrap;
     align-items: center;
     margin-bottom: 1rem;
@@ -190,9 +215,20 @@
     justify-content: center;
   } 
 
+  .footerText {
+    text-align: center;
+  }
+
   .footerLinks {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
   }
+}
+
+@media only screen and (max-width: 350px) {
+ .footerNavLogo {
+   width: 32px;
+   height: 32px;
+ }
 }

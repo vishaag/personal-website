@@ -55,6 +55,7 @@ export default function Layout({ children, home }) {
             </li>
           </ul>
         </div>
+        <p className={styles.introTextSm}>I'm a Computer Science Engineer with a focus on front-end engineering and currently based in Sunny Singapore</p>
       </header>
       <main>{children}</main>
       {!home && (
@@ -71,7 +72,7 @@ export default function Layout({ children, home }) {
             className={styles.footerImage}
             alt='logo'
           />
-          <h1 className={utilStyles.headingLg}><span className={utilStyles.lightText}>Find my</span> work interesting?</h1>
+          <h1 className={`${utilStyles.headingLg} ${styles.footerText}`}><span className={utilStyles.lightText}>Find my</span> work interesting?</h1>
           <p className={`${utilStyles.textSm} ${styles.footerText}`}>I'm currently on the lookout for a new role. If you like my work and think I'd be a good fit in your team, please get in touch!</p>
         </div>
         <div className={styles.footerNavSide}>

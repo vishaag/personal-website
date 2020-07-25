@@ -46,3 +46,9 @@ pre {
   overflow: scroll;
   background: rgb(32, 32, 32);
 }
+
+@media only screen and (max-width: 350px) {
+ html, body {
+   font-size: 14px;
+ }
+}
