@@ -18,7 +18,7 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content="/images/socialCard.png"
+          content="https://vishaag.com/images/socialCard.png"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
