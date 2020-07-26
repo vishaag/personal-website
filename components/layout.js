@@ -75,14 +75,14 @@ export default function Layout({ children, home }) {
         </div>
         <div className={styles.footerNavSide}>
           <div className={styles.footerLinks}>
-            <a href="mailto:vishaag@gmail.com" target="_blank">
+            <a href="mailto:vishaag@gmail.com" target="_blank" rel="noopener">
               <img
                 src="/images/mail.png"
                 className={styles.footerNavLogo}
                 alt='E-mail logo link'
               />
             </a>
-            <a href="https://twitter.com/vishaag" target="_blank">
+            <a href="https://twitter.com/vishaag" target="_blank" rel="noopener">
               <img
                 src="/images/twitter.png"
                 className={styles.footerNavLogo}
@@ -90,7 +90,7 @@ export default function Layout({ children, home }) {
               />
             </a>
 
-            <a href="https://github.com/vishaag" target="_blank">
+            <a href="https://github.com/vishaag" target="_blank" rel="noopener">
               <img
                 src="/images/github.png"
                 className={styles.footerNavLogo}
@@ -98,7 +98,7 @@ export default function Layout({ children, home }) {
               />
             </a>
 
-            <a href="https://www.linkedin.com/in/vishaag/" target="_blank">
+            <a href="https://www.linkedin.com/in/vishaag/" target="_blank" rel="noopener">
               <img
                 src="/images/linkedin.png"
                 className={styles.footerNavLogo}

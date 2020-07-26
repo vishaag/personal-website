@@ -54,19 +54,19 @@ export default function Home({ allPostsData }) {
          <h2 className={utilStyles.headingMd}>things I've been working on..</h2>
          <ul className={`${utilStyles.list} ${utilStyles.cardList}`}>
            <li>
-             <a className={utilStyles.card} href="https://guess-that-logo.now.sh/" target="_blank">
+            <a className={utilStyles.card} href="https://guess-that-logo.now.sh/" target="_blank" rel="noopener">
                 <h3>Guess That Logo</h3>
                 <p>You need to guess all the logos in 30 secs. Can you do it? Built with Next.js 9.4</p>
              </a>
            </li>
            <li>
-             <a className={utilStyles.card} href="https://github.com/vishaag/MagicWand" target="_blank">
+            <a className={utilStyles.card} href="https://github.com/vishaag/MagicWand" target="_blank" rel="noopener">
                 <h3>Magic Wand</h3>
                 <p>Swish & Flick your smartphone to press buttons on your keyboard. Built with React Native & some ML</p>
              </a>
            </li>
            <li>
-             <a className={utilStyles.card} href="https://scoreboardoverlay.now.sh/" target="_blank">
+            <a className={utilStyles.card} href="https://scoreboardoverlay.now.sh/" target="_blank" rel="noopener">
                 <h3>SVG Overlay</h3>
                 <p>What if sport scoreboard overlays could be done with SVG animations? Built with Greensock & React.js </p>
              </a>
