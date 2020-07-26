@@ -68,7 +68,7 @@ export default function Layout({ children, home }) {
           <img
             src="/images/feather2.png"
             className={styles.footerImage}
-            alt='logo'
+            alt='a variation of the main logo, a feather'
           />
           <h1 className={`${utilStyles.headingLg} ${styles.footerText}`}><span className={utilStyles.lightText}>Find my</span> work interesting?</h1>
           <p className={`${utilStyles.textSm} ${styles.footerText}`}>I'm currently on the lookout for a new role. If you like my work and think I'd be a good fit in your team, please get in touch!</p>
@@ -79,14 +79,14 @@ export default function Layout({ children, home }) {
               <img
                 src="/images/mail.png"
                 className={styles.footerNavLogo}
-                alt='logo'
+                alt='E-mail logo link'
               />
             </a>
             <a href="https://twitter.com/vishaag" target="_blank">
               <img
                 src="/images/twitter.png"
                 className={styles.footerNavLogo}
-                alt='logo'
+                alt='Twitter logo link'
               />
             </a>
 
@@ -94,7 +94,7 @@ export default function Layout({ children, home }) {
               <img
                 src="/images/github.png"
                 className={styles.footerNavLogo}
-                alt='logo'
+                alt='Github logo link'
               />
             </a>
 
@@ -102,7 +102,7 @@ export default function Layout({ children, home }) {
               <img
                 src="/images/linkedin.png"
                 className={styles.footerNavLogo}
-                alt='logo'
+                alt='linkedIn logo link'
               />
             </a> 
           </div>   
