@@ -33,7 +33,7 @@ export default function Layout({ children, home }) {
             />
           </Link> 
           <h1 className={utilStyles.headingLg}>{firstName} <span className={utilStyles.lightText}>{lastName}</span></h1>
-          <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>is a Computer Science Engineer with a focus on front-end engineering and currently based in Sunny Singapore</p>
+          <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>is computer science engineer based in Singapore who is passionate about front-end engineering and creating elegant and impactful products.</p>
         </div>
         <div className={styles.headerNavSide}>
           <ul className={styles.headerLinksList}>
@@ -53,7 +53,7 @@ export default function Layout({ children, home }) {
             </li>
           </ul>
         </div>
-        <p className={styles.introTextSm}>I'm a Computer Science Engineer with a focus on front-end engineering and currently based in Sunny Singapore</p>
+        <p className={styles.introTextSm}>I am a computer science engineer based in Singapore who is passionate about front-end engineering and creating elegant and impactful products.</p>
       </header>
       <main>{children}</main>
       {!home && (

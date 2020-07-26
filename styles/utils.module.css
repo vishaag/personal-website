@@ -152,6 +152,26 @@
   max-width: 50%; 
 }
 
+.button {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+
 @media only screen and (max-width: 975px) {
   .titleText {
     margin: 0
