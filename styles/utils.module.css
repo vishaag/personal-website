@@ -141,10 +141,15 @@
 }
 
 .featherColor {
-  background: -webkit-linear-gradient(0deg,#00c4cc,#7d2ae8);
+  background-color: white;
+  background-image: -webkit-linear-gradient(0deg,#00c4cc,#7d2ae8);
+  background-size: 100%;
+  background-repeat: repeat;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .bigImage {
