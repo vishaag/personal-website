@@ -53,6 +53,12 @@ export default function Work() {
                 <p>Intelligent Personal Airport Assistant Chatbot for Changi Airport.</p>
              </a>
            </li>
+           <li>
+            <a className={utilStyles.card} href="https://pomodoro-zeta.vercel.app/" target="_blank" rel="noopener">
+                <h3>Pomodoro</h3>
+                <p>A simple 25 minute timer based on the pomodoro technique.</p>
+             </a>
+           </li>
          </ul>
       </section>
     </Layout>
