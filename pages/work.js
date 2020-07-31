@@ -54,9 +54,15 @@ export default function Work() {
              </a>
            </li>
            <li>
-            <a className={utilStyles.card} href="https://pomodoro-zeta.vercel.app/" target="_blank" rel="noopener">
+            <a className={utilStyles.card} href="https://pomodoro-zeta.vercel.app" target="_blank" rel="noopener">
                 <h3>Pomodoro</h3>
                 <p>A simple 25 minute timer based on the pomodoro technique.</p>
+             </a>
+           </li>
+           <li>
+            <a className={utilStyles.card} href="https://markdown-editor-ten.vercel.app" target="_blank" rel="noopener">
+                <h3>Markdown Editor</h3>
+                <p>A rather simple live markdown-editor powered by react-markdown</p>
              </a>
            </li>
          </ul>
