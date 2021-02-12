@@ -33,7 +33,7 @@ export default function Layout({ children, home }) {
             />
           </Link> 
           <h1 className={utilStyles.headingLg}>{firstName} <span className={utilStyles.lightText}>{lastName}</span></h1>
-          <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>is computer science engineer based in Singapore who is passionate about front-end engineering and creating elegant and impactful products.</p>
+          <p className={`${utilStyles.textSm} ${styles.headerIntroText}`}>is a front-end developer based in Sunny Singapore and is passionate about creating elegant and impactful products.</p>
         </div>
         <div className={styles.headerNavSide}>
           <ul className={styles.headerLinksList}>
@@ -53,7 +53,6 @@ export default function Layout({ children, home }) {
             </li>
           </ul>
         </div>
-        <p className={styles.introTextSm}>I am a computer science engineer based in Singapore who is passionate about front-end engineering and creating elegant and impactful products.</p>
       </header>
       <main>{children}</main>
       {!home && (
@@ -70,8 +69,8 @@ export default function Layout({ children, home }) {
             className={styles.footerImage}
             alt='a variation of the main logo, a feather'
           />
-          <h1 className={`${utilStyles.headingLg} ${styles.footerText}`}><span className={utilStyles.lightText}>Find my</span> work interesting?</h1>
-          <p className={`${utilStyles.textSm} ${styles.footerText}`}>I'm currently on the lookout for a new role. If you like my work and think I'd be a good fit in your team, please get in touch!</p>
+          <h1 className={`${utilStyles.headingLg} ${styles.footerText}`}><span className={utilStyles.lightText}>Get in</span> touch?</h1>
+          <p className={`${utilStyles.textSm} ${styles.footerText}`}>If you want to pick my head about web developement, or about living in Singapore, or anything, feel free to get in touch 🤗</p>
         </div>
         <div className={styles.footerNavSide}>
           <div className={styles.footerLinks}>
