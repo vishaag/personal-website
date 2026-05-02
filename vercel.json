@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/flappy-bird",
+      "destination": "https://game-plum-kappa-23.vercel.app"
+    },
+    {
+      "source": "/flappy-bird/:path*",
+      "destination": "https://game-plum-kappa-23.vercel.app/:path*"
+    }
+  ]
+}
